@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de envío</title>
+    <script type="text/javascript">
+        function validar(){
+        var psswd=document.getElementById("psswd").value;
+        var confpsswd=document.getElementById("confpsswd").value;
+        if(psswd==confpsswd){
+        return true;
+        }
+        else{
+        alert("No coincideix");
+        return false;
+        }
+        }
+        </script>
+</head>
+<body>
+    <form method="get" action="mailto:gabriel.rodriguez@inslapineda.cat">
+        <table align="center" style="background-color: #EFEFEF;">
+            <tr>
+                <td style="background-color: #306090;color: white;font-family: Verdana, Geneva, Tahoma, sans-serif;">Enviar mensaje<img src="img/gb_reload_s.gif" alt="logo" align="right"></td>
+            </tr>
+            <tr>
+                <td><input type="hidden" name="id" style="background-color: #EFEFEF;"></td>
+            </tr>
+            <tr>
+                <td style="font-family: Verdana, Geneva, Tahoma, sans-serif">Nombre:<input type="text"></td>    
+            </tr>
+            <tr>
+                <td style="font-family: Verdana, Geneva, Tahoma, sans-serif">E-Mail:&ensp;&ensp;<input type="email" required>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td style="font-family: Verdana, Geneva, Tahoma, sans-serif">Archivo: <input type="text"><input type="file" accept="image/*"></td>
+            </tr>
+            <tr>
+                <td style="font-family: Verdana, Geneva, Tahoma, sans-serif">Imagen: <input type="text"><input type="file" ></td>
+            </tr>
+            <tr>
+                <td style="font-family: Verdana, Geneva, Tahoma, sans-serif"><label for="usuario">Usuario: <input type="text" maxlength="8" required></label></td>
+            </tr>
+            <tr>
+                <td style="font-family: Verdana, Geneva, Tahoma, sans-serif">Contraseña: <input type="password" required id="psswd"></td>
+            </tr>
+            <tr>
+                <td style="font-family: Verdana, Geneva, Tahoma, sans-serif">Conf. Contraseña: <input type="password" required id="confpssdw"></td>
+            </tr>
+            <tr>
+                <td>Que juegos te interesan?</td>
+            </tr>
+            <tr>&ensp;</tr>
+            <tr align="center">
+                <td>Call of Duty<input type="checkbox">&ensp;God Of War<input type="checkbox">&ensp;Call of Juarez<input type="checkbox">&ensp;Tekken 3<input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td align="center" style="font-family: Verdana, Geneva, Tahoma, sans-serif"><small><small>El tamaño del archivo y la imagen no puede exceder los 4 KBytes</small></small></td>
+            </tr>
+            <tr>
+                <td align="center" style="font-family: Verdana, Geneva, Tahoma, sans-serif">Requiere respuesta: <input type="radio" id="si" name="respuesta" value="si"><small> Sí</small>
+                    <input type="radio" id="no" name="respuesta" value="no"><small>No</small></td>
+            </tr>
+            <tr>
+                <th align="center">Mensaje</th>
+            </tr>
+            <tr>
+                <td align="center" style="font-family: Verdana, Geneva, Tahoma, sans-serif"><textarea name="Descripción" id="" cols="45" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <input type="submit" value="Enviar"><input type="reset" value="Borrar">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

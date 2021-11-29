@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ca">
+    <head>
+        <link rel="shortcut icon" href="img/calculadora.png">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calcutredora</title>
+    </head>
+    <body>
+        <form name="calculadora">
+            <h1>CALCUTREDORA</h1>
+            <table>
+            <tr>
+                <td colspan="4"><input type="textfield" name="ans" value="" style="width:282px;height:20px"></td>
+            </tr>
+            <tr>
+                <td><img width="75" height="75" src="img/numero1.png" value="1" onClick="document.calculadora.ans.value+='1'"></td>
+                <td><img width="75" height="75" src="img/numero2.png" value="2" onClick="document.calculadora.ans.value+='2'"></td>
+                <td><img width="75" height="75" src="img/numero3.png" value="3" onClick="document.calculadora.ans.value+='3'"></td>
+                <td><input type="button" style="width:50px;height:90px" value="+" onClick="document.calculadora.ans.value+='+'"></td>
+            </tr>
+            <tr>
+                <td><img width="75" height="75" src="img/numero4.png" value="4" onClick="document.calculadora.ans.value+='4'"></td>
+                <td><img width="75" height="75" src="img/numero5.png" value="5" onClick="document.calculadora.ans.value+='5'"></td>
+                <td><img width="75" height="75" src="img/numero6.png" value="6" onClick="document.calculadora.ans.value+='6'"></td>
+                <td><input type="button" style="width:50px;height:90px" value="-" onClick="document.calculadora.ans.value+='-'"></td>
+            </tr>
+            <tr>
+                <td><img width="75" height="75" src="img/numero7.png" value="7" onClick="document.calculadora.ans.value+='7'"></td>
+                <td><img width="75" height="75" src="img/numero8.png" value="8" onClick="document.calculadora.ans.value+='8'"></td>
+                <td><img width="75" height="75" src="img/numero9.png" value="9" onClick="document.calculadora.ans.value+='9'"></td>
+                <td><input type="button" style="width:50px;height:90px" value="*" onClick="document.calculadora.ans.value+='*'"></td>
+            </tr>
+            <tr>
+                <td><img width="75" height="75" src="img/numero0.png" value="0" onClick="document.calculadora.ans.value+='0'"></td>
+                <td><input type="reset" style="width:50px;height:90px" value="c"></td>
+                <td><input type="button" style="width:50px;height:90px" value="/" onClick="document.calculadora.ans.value+='/'"></td>
+                <td><input type="button" style="width:50px;height:90px" value="=" onClick="document.calculadora.ans.value=eval(document.calculadora.ans.value)"></td>
+            </tr>
+            </table>
+        </form>
+    </body>
+</html>
